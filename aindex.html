@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarthak Wankhede | Developer Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      /* ================= HERO ================= */
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        font-weight: 700;
+      }
+
+      .hero span {
+        color: #38bdf8;
+      }
+
+      .hero p {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #94a3b8;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #38bdf8;
+        color: #0f172a;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #0ea5e9;
+      }
+
+      /* ================= SECTION ================= */
+
+      section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 50px;
+        font-weight: 600;
+      }
+
+      /* ================= ABOUT ================= */
+
+      .about {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #38bdf8;
+      }
+
+      .about-text p {
+        color: #cbd5e1;
+      }
+
+      /* ================= SKILLS ================= */
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-card {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px);
+        background: #334155;
+      }
+
+      .skill-card h4 {
+        margin-bottom: 10px;
+        color: #38bdf8;
+      }
+
+      /* ================= PROJECTS ================= */
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .project-card {
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 25px;
+        transition: 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        background: #334155;
+      }
+
+      .project-card h4 {
+        margin-bottom: 10px;
+        color: #38bdf8;
+      }
+
+      .project-card p {
+        font-size: 14px;
+        color: #cbd5e1;
+        margin-bottom: 15px;
+      }
+
+      .project-card a {
+        font-size: 14px;
+        color: #38bdf8;
+      }
+
+      /* ================= CONTACT ================= */
+
+      .contact {
+        text-align: center;
+      }
+
+      .contact p {
+        margin-bottom: 10px;
+        color: #cbd5e1;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #020617;
+        color: #94a3b8;
+        font-size: 14px;
+      }
+
+      /* ================= RESPONSIVE ================= */
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Hi, I'm <span>Sarthak Wankhede</span></h1>
+        <p>
+          BCA Student | Aspiring Software & Web Developer focused on building
+          practical and scalable digital solutions.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+              I am a motivated BCA student currently pursuing my degree with a
+              7.5 SGPA. I specialize in front-end development and have hands-on
+              experience in HTML, CSS, JavaScript, C++, Java, and MySQL. I am
+              constantly improving my skills and building real-world projects to
+              strengthen my technical foundation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <h4>Programming</h4>
+            <p>C++, Java</p>
+          </div>
+          <div class="skill-card">
+            <h4>Database</h4>
+            <p>MySQL</p>
+          </div>
+          <div class="skill-card">
+            <h4>Soft Skills</h4>
+            <p>Problem Solving, Time Management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4>Doctor Portfolio Website</h4>
+            <p>
+              A responsive professional website designed for a medical
+              practitioner.
+            </p>
+            <a
+              href="https://drsiddhibaria.github.io/Dr.SidhiBaria/"
+              target="_blank"
+              >Live Project →</a
+            >
+          </div>
+
+          <div class="project-card">
+            <h4>Monexfi Website</h4>
+            <p>
+              A modern business website built with structured layout and
+              responsive design.
+            </p>
+            <a href="https://monexfi.github.io/Monexfi3/" target="_blank"
+              >Live Project →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <div class="container contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: wankhedesarthak924@gmail.com</p>
+        <p>Phone: +91 9833261451</p>
+        <p>Location: Vikhroli, Maharashtra</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Sarthak Wankhede | All Rights Reserved</footer>
+  </body>
+</html>
